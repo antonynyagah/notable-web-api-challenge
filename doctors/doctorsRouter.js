@@ -97,7 +97,7 @@ router.post('/:id/appointments', validateAppointment, (req, res) => {
 // middleware functions
 
 function validateDoctor(req, res, next) {
-    if (req.body.name){
+    if (req.body.firstname){
         next();
     } else if (Object.keys(req.body).length < 1) {
         res.status(400).json({ message: 'Missing doctors data' })

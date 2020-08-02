@@ -14,7 +14,7 @@ exports.up = function(knex) {
         appointments.string("patientlastname", 128).notNullable();
         appointments.string("date", 128).notNullable();
         appointments.string("time").notNullable();
-        appointments.string("New Patient or Follow up").notNullable();
+        appointments.string("New PatientorFollow up").notNullable();
 
         
     });
